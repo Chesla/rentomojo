@@ -72,24 +72,24 @@ class SmallTeam extends React.Component {
             <div>
                 <div className="team-cnt">
                     <div className="teamName">
-                        Team Name: {team.team_name}
+                        {team.team_name}
                     </div>
                     <div className="empDet">
                         <div className="empName">
-                            Name: {name}
+                            {name}
                         </div>
                         <div  className="empDes">
-                            Designation: {designation}
+                            {designation}
                         </div>
                     </div>
                     <div className="cmpDet">
                         <div className="empName">
-                            Emp Reporting: {Object.keys(team.teams).length}
+                            {Object.keys(team.teams).length}
                         </div>
                         <div  className="empDes">
                             No of employee: Not known
                         </div>
-                        <div>
+                        
                             {Object.keys(team.teams).length ? 
                                 <div onClick={this.changeShowChildren.bind(this,emp_id)}>
                                     {showChildren ?
@@ -98,7 +98,6 @@ class SmallTeam extends React.Component {
                                 </div>
                                 : null
                             }
-                        </div>
                     </div>
                 </div>
                 
